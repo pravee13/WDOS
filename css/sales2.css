@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+   
+    
+}
+
+/* -----------------Navigation bar,logo and page name(topic)---------------------*/
+
+.background-image {
+    background-image: url(../images/Sri-Lanka-tea-workers2.webp);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation: change 44s infinite ease-in-out;
+}
+@keyframes change {
+    0% 
+    {
+        background-image: url(../images/Sri-Lanka-tea-workers2.webp);
+    }
+    25% 
+    {
+        background-image: url(../images/tea-plants2.webp);
+    }
+    50% 
+    {
+        background-image: url(../images/tea-plantation1.webp);
+    }
+    75% 
+    {
+        background-image: url(../images/museum.webp);
+    }
+    100% 
+    {
+        background-image: url(../images/tea-plantation-workers.webp);
+    }
+}
+
+.navPan {
+    position:absolute;
+    margin: 30px;
+    width: auto;
+    min-width: 10px;
+    padding-top: 15px;
+    padding-left: 45%;   /* navPan right corner */
+}
+
+.nav-other a {
+    float: left;
+    color: #333;
+    font-weight: 550;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    justify-content: space-between;
+}
+.nav-other a:hover {
+    background-color: #ff7b00;
+    color: black;
+}
+
+.logo:hover img {
+    transform: scale(1.03) perspective(0px);
+    box-shadow: 4px 4px 4px rgb(12, 12, 12)
+}
+
+.topic {
+    text-align: center;
+}
+.topic h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    stroke: #f2f2f2;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+.topic h1:hover {
+    -webkit-text-stroke: 2px #f2f2f2;
+    color: #000;
+}
+
+/*----------------Video Home Main Nav----------------*/
+.home-background {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 8px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+     
+}
+.video-nav .video-nav-logo {
+    width: 140px;
+    
+}
+.video-nav-logo{
+    margin: 30px;
+}
+.video-nav .video-nav-logo:hover {
+    transform: scale(1.03) perspective(0px);
+    box-shadow: 4px 4px 4px rgb(12, 12, 12);
+}
+.video-nav >ul{
+    margin-right:90px;
+    padding-right: 30px;
+    background-color: #9b9e9f;
+    border-radius: 14px;
+    padding: 15px;
+}
+.video-nav >ul >li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 20px;
+   
+}
+.video-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 550;
+    cursor: pointer;
+    transition: 0.9s;
+    color: #24262b;
+}
+.video-nav ul li a:hover {
+    text-decoration:overline;
+    text-decoration-color: #ff7b00 ;
+    color: #000;
+}
+
+.video-page-topic {
+    text-align: center;
+    padding-top: 10%;
+}
+.video-page-topic h1 {
+    font-size: 60px;
+    color: #333;
+    font-weight: 700;
+    transition: 1s;
+}
+.video-page-topic a {
+    text-decoration: none;
+    display: inline-block;
+    color: #333;
+    font-size: 30px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: 1s;
+}
+.video-page-topic h1:hover {
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0);
+    color: #000;
+}
+.video-page-topic a:hover {
+    background-color: #bbbbbb;
+}
+
+video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.bg-video{
+    background: linear-gradient();
+}
+.video-overlay {
+    position: absolute;
+    top: 30%;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+@media (min-aspect-ratio: 16/9){
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/*--------- Go To The Top Button---------*/
+.totop {
+    background-image: url(../images/angles-up-solid.svg);
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+/*-----------------Footer-----------------*/
+
+.footer-background-container {
+    max-width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ff7b00;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+
+}
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color:#bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+    color:#ffffff;
+    padding-left: 10px;
+}
+
+#copyright {
+    width: 25%;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #f2f2f2;
+}
+
+/*---------------------------Sales Content-----------------------*/
+
+.sales2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(3,auto);
+    grid-auto-flow: dense;
+    background-color: #f2f2f2;
+    padding: 70px;
+}
+.sales-content {
+    background-color: whitesmoke;
+    border: 1px rgb(0, 0, 0) solid;
+    padding: 5%;
+    text-align: center;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+h3,p,button,a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-top: 5%;
+}
+h3 {
+    font-size: 14px;
+    padding: 5px;
+}
+p {
+    font-size: 12px;
+    padding: 5px;
+}
+.price  p{
+    font-size: 22px;
+}
+
+.sales-content:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
+    background-color: white;
+}
+.sales-content .button {
+    text-align: center;
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sales-content .button:hover {
+    background-color: #ff7b00;
+}
+
+/*-----------------------Next Previous Button-----------------------*/
+.nxtpriv-button {
+    text-align: center;
+    padding-bottom: 5px;
+}
+.nxtpriv-button a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+.previous {
+    background-color: #8ab4a3;
+    color: black;
+}
+
+.nxtpriv-button a:hover {
+    background-color: #ff7b00;
+    color: #f2f2f2;
+}
+
+/*-----------------------footer mobile comaptibale--------------------------------------*/
+
+@media only screen and (max-device-width: 720px) {
+    .footer-background-container {
+        max-width: 414px;
+    }
+    .footer-col h4 {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .footer-col ul {
+        margin-left: 5px; ;
+    }
+    .footer-col ul li a {
+        font-size: 12px;
+    }
+    
+    #copright h4 {
+        width: 50%;
+        padding: 50px 70px;
+        font-size: 12px;
+        
+    }
+}
+
+/*---------------------top background and logo-----------------*/
+
+@media only screen and (max-device-width: 720px) { 
+    .video-nav {
+        padding: 50px 10px;
+        display: flex;
+        flex-flow:column wrap;
+       
+    }
+    .video-nav >ul {
+        margin-right: 2px;
+        padding: 10px;
+    }
+    .video-nav >ul >li {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .video-nav-logo {
+        margin: 5px;
+    }
+    .video-nav .video-nav-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .video-page-topic h1 {
+        font-size: 36px;
+    }
+    .video-page-topic a {
+        font-size: 20px;
+    }
+    .topic h1 {
+        font-size: 30px;
+    }
+}
+
+/*-------------------------sales content mobile-----------------------*/
+
+@media only screen and (max-device-width: 720px) { 
+    .sales2 {
+        padding: 0;
+        grid-template-columns: auto;
+    }
+
+    .sales-content h3 {
+        font-size: 16px
+    }
+    h5 {
+        font-size: 18px;
+    }
+    .sales-content p {
+        font-size: 14px;
+    }
+    .sales-content img {
+        max-width: 160px;
+        max-height: 160px;
+    }
+  
+}
+@media only screen and (max-device-width: 985px){
+    .sales-content {
+        width: fit-content;
+        margin: 16px;
+        box-sizing: border-box;
+        float: left;
+        text-align: center;
+        border-radius: 20px;
+        cursor: pointer;
+        padding-top: 10px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        transition: 0.4s;
+        background: #f2f2f2;
+    }
+}
