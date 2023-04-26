@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Purchase and Donations for Sri lankan Tea Industry">
+        <meta name="description" content="By Products of Tea">
         <meta name="author" content="Praveen Matharage">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/normalize.css">
@@ -17,101 +17,102 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-config" content="images/mainfest-icon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-        <title>Purchase and Donations</title>
+        <title>By Products of Tea</title>
     </head>
     <body>
-        <header id="purchase-and-donations">
+        <header id="by-products-of-tea">
 <!-------------------------------------Go TO The Top button------------------------------------------------------------------------------------------------------------------------------------------------------>
             <a href="#" class="totop"></a>
 <!-------------------------------------Main Nav Panel and Topic Area------------------------------------------------------------------------------------------------------------------------------------------------------>
             <div class="background-image">
+                
+
                 <nav class="video-nav">
-                    <img src="images/logo.png" class="video-nav-logo">
+                    <a href="index.html"><img src="images/logo.png" class="video-nav-logo"></a>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="ceylon-tea-museum.html">Museum</a></li>
                         <li><a href="tea-plantation-of-sri-lanka.html">Tea Plantation</a></li>
-                        <li><a href="by-products-of-tea.html">By Products Of Tea</a></li>
-                        <li class="active"><a href="purchase-and-donations.html">Purchase and Donate</a></li>
+                        <li class="active"><a href="by-products-of-tea.html">By Products Of Tea</a></li>
+                        <li><a href="purchase-and-donations.html">Purchase and Donate</a></li>
                         <li><a href="sales1.html">Tea sales</a></li>
                     </ul>
                 </nav>
-                    <div class="topic">
-                        <h1>Purchase and Donations</h1>
+
+                <div class="video-overlay">
+                    <div class="video-page-topic">
+                        <h1>Sri Lankan Tea Industry</h1>
+                        
                     </div>
+                </div>
             </div>
         </header>
 <!-------------------------------------Page Content------------------------------------------------------------------------------------------------------------------------------------------------------>
-        <br>
+      
         <div class="paras">
             <article id="article">
                 <br>
                 <section>
-                    <h2 id="donations-topic">Types of Donations can make for the betterment of the tea Industry in Sri Lanka</h2><br>
-                    <div class="donations-all-btns">
-                        <a href="#" class="donations-button">New Tea Plants</a><br><br>
-                        <a href="#" class="donations-button">Tea Fertilizer</a><br><br>
-                        <a href="#" class="donations-button">Tea Processing Machines, Tea Blending Machines</a><br><br>
-                        <a href="#" class="donations-button">Promoting, Advertising</a><br><br>
-                        <a href="#" class="donations-button">Financial Assistance</a><br><br>
-                        <a href="#" class="donations-button">Other</a><br>
-                    </div>
-                </section>
-                <br>
-                <head>
-                    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-                          <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
-                  </head>
-                  <body>
-                  <div class="donation-container">
-                              
-                              <div class="donation-box">
-                                  <div class="title">Donation Information</div>
-                                  
-                                  <div class="fields">
-                                      <input type="text" id="firstName" placeholder="First Name"> </input>
-                                      <input type="text" id="lastName" placeholder="Last Name"> </input>
-                                      <input type="text" id="email" placeholder="Email"> </input>
-                                  </div>
-                                  
-                                  <div class="amount">
-                                      <div class="button">$30</div>
-                                      <div class="button">$50</div>
-                                      <div class="button">$100</div>
-                                      <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
-                                  </div>
-                                  
-                                  <div class="switch">
-                                      <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
-                                      <label for="one-time" class="switch-label switch-label-off">One-Time</label>
-                                      <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
-                                      <label for="monthly" class="switch-label switch-label-on">Monthly</label>
-                                      <span class="switch-selection"></span>
-                                  </div>
-                                  
-                                  <div class="checkboxes">
-                                      <input type="checkbox" id="receipt" class="checkbox" />
-                                      <label for="receipt">Email Me A Receipt</label>
-                                      <br />
-                                      <input type="checkbox" id="anon" class="checkbox" />
-                                      <label for="anon">Give Anonymously</label>
-                                      <br />
-                                      <input type="checkbox" id="list" class="checkbox" />
-                                      <label for="list">Add Me To Email List</label>
-                                  </div>
-                                  
-                                  <div class="confirm">
-                                      
-                                  </div>
-                                  
-                                  <div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div>
-                              </div>
-                              
-                          </div>
+                    <main>
+                        <div id="mainPara">
+                          
+                    
+                            <form class="donoUI">
+                              <fieldset>
+                              <legend>DONATE</legend>
+                              <pre>
+          
+          Choose an Amount  <select id="amount" name="amount">
+                              <option value="100">100 LKR</option>
+                              <option value="500">500 LKR</option>
+                              <option value="1000">1000 LKR</option>
+                              <option value="2000">2000 LKR</option>
+                              <option value="5000">5000 LKR</option>
+                            </select>  
                   
-                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-                  <script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>
-                  </body>
+          Full Name        <input type="text" id="fName" maxlength="30" required><br>
+          Address          <input type="text" id="address" maxlength="30" required><br>
+          
+          Card Number              Name on Card
+          <input type="tel" id="cNumber" maxlength="16" required>  <input type="text" id="nameOnCard" maxlength="30" required>   
+          
+          <div class="form-group" id="expiration-date">
+          <label>Expiration Date : </label> 
+            <select id="month">
+                  <option value="01">January</option>
+                  <option value="02">February </option>
+                  <option value="03">March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+            </select>
+            <select id="year">
+                  <option value="22"> 2022</option>
+                  <option value="23"> 2023</option>
+                  <option value="24"> 2024</option>
+                  <option value="25"> 2025</option>
+                  <option value="26"> 2026</option>
+                  <option value="27"> 2027</option>
+                  <option value="28"> 2028</option>
+              </select>
+          </div>
+          
+          CVC/CVV  
+          <input type="password" id="cvv" maxlength="3" required>
+          
+                              </pre>  
+                              <input type="button" id="donateSubmit" value ="Donate">    
+                              </fieldset>   
+                            </form>
+                
+                          
+                      </main>
                 <div class="other-products-paras">
                         <h2>Sri Lankan Other Best Merchandises </h2><br><br>
                     <section>
@@ -143,40 +144,39 @@
             </article>
         </div>
 <!-------------------------------------Footer Area------------------------------------------------------------------------------------------------------------------------------------------------------>
-        <footer class="footer">
-            <div class="footer-background-container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>Other Pages</h4>
-                        <ul>
-                            <li><a href="by-products-of-tea.html">By productsof Tea</a></li>
-                            <li><a href="ceylon-tea-museum.html">Museum</a></li>
-                            <li><a href="#">Purchase and Donate</a></li>
-                            <li><a href="tea-plantation-of-sri-lanka.html">Tea plantations of Sri Lanka</a></li>
-                            <li><a href="sales1.html">Tea sales</a></li>
-                            <li><a href="index.html">Home</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Online Sales</h4>
-                        <ul>
-                            <li><a href="sales1.html">Tea sales</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Contact us</h4>
-                        <ul>
-                            <li><a href="mailto:CB0107081@students.apiit.lk">Send Emails</a></li>
-                        </ul>
-                    </div>
-                    <div id="copyright">
-                        <h4>Copyright © Praveen Matharage 2022</h4>
-                    </div>
-                </div>
+<footer class="footer">
+    <div class="footer-background-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Other Pages</h4>
+                    <ul>
+                        <li><a href="#">By productsof Tea</a></li>
+                        <li><a href="ceylon-tea-museum.html">Museum</a></li>
+                        <li><a href="purchase-and-donations.html">Purchase and Donate</a></li>
+                        <li><a href="tea-plantation-of-sri-lanka.html">Tea plantations of Sri Lanka</a></li>
+                        <li><a href="sales1.html">Tea sales</a></li>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
             </div>
-            <!--Export Development Board Sri Lanka (2022) Emarketplace [Online] Available from: https://www.srilankabusiness.com/emarketplace/ [Accessed: 19th July 2021]-->
-            <!--True Ceylon Spices (2021) Cinnamon from Sri Lanka [Online] Available from: https://www.trueceylonspices.com/cinnamon-from-sri-lanka/ [Accessed: 19th July 2021]-->
-            <!--Ceylon Art Shop (2022) Traditional Wooden Masks in Sri Lanka [Online] Available from: https://ceylonartshop.com/traditional-wooden-masks-in-sri-lanka/ [Accessed: 19th July 2021]-->
-        </footer>
-    </body>
+            <div class="footer-col">
+                <h4>Online Sales</h4>
+                    <ul>
+                        <li><a href="sales1.html">Tea sales</a></li>
+                    </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact us</h4>
+                    <ul>
+                        <li><a href="mailto:CB0107081@students.apiit.lk">Send Emails</a></li>
+                    </ul>
+            </div>
+            <div id="copyright">
+                <h4>Copyright © Praveen Matharage 2022</h4>
+            </div>
+        </div>
+    </div>
+    <!--Tea Research Institute of Sri Lanka (2022) Value Added Tea Products. [Online] Available from: https://www.tri.lk/value-added-tea-products/ [19 July 2022]-->
+</footer>
+<script src="donate.js"></script>
+</body>
 </html>

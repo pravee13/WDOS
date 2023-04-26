@@ -251,3 +251,5 @@ checkLoyalty.addEventListener("click", () => {
     alert("You have no loyalty points");
   }
 });
+
+
