@@ -129,7 +129,7 @@ btnPlaceOrder.addEventListener("click", () => {
   const email = txtEmail.value;
   const confirmEmail = txtConfirmEmail.value;
   const phoneNumber = txtPhoneNumber.value;
-
+  console.log(phoneNumber);
   if (fullName === "") {
     alert("Please enter your full name");
   } else if (email === "") {
@@ -148,6 +148,7 @@ btnPlaceOrder.addEventListener("click", () => {
       foreignerChildCount * foreignerChildPass +
       infantCount * 0;
     txtCustomerOrderOutput.innerHTML = `Full Name: ${fullName} <br> Email: ${email} <br> Phone Number: ${phoneNumber} <br> Total: ${total}`;
+
     alert("Thank you for your order!");
   }
 });
@@ -251,5 +252,3 @@ checkLoyalty.addEventListener("click", () => {
     alert("You have no loyalty points");
   }
 });
-
-
