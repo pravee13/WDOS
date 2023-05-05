@@ -147,7 +147,7 @@ btnPlaceOrder.addEventListener("click", () => {
       foreignerAdultCount * foreignerAdultPass +
       foreignerChildCount * foreignerChildPass +
       infantCount * 0;
-    txtCustomerOrderOutput.innerHTML = `Full Name: ${fullName} <br> Email: ${email} <br> Phone Number: ${phoneNumber} <br> Total: ${total}`;
+    txtCustomerOrderOutput.innerHTML = `Full Name: ${fullName} <br> Email: ${email} <br> Phone Number: ${phoneNumber} <br><br> Total: ${total} <br> SL Adults: ${slAdultCount} <br> SL Childs: ${slChildCount} <br> Foreigner Adults: ${foreignerAdultCount} <br> Foreigner Childs: ${foreignerChildCount} <br> Infants: ${infantCount}`;
 
     alert("Thank you for your order!");
   }
